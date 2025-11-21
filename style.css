@@ -15,7 +15,10 @@ body {
 /* Grain Overlay */
 .grain {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.07'/%3E%3C/svg%3E");
     pointer-events: none;
     z-index: 50;
@@ -25,7 +28,10 @@ body {
 /* Custom Cursor */
 #cursor-outer {
     position: fixed;
-    top: 0; left: 0; width: 40px; height: 40px;
+    top: 0; 
+    left: 0; 
+    width: 40px; 
+    height: 40px;
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 50%;
     pointer-events: none;
@@ -33,9 +39,13 @@ body {
     transition: width 0.3s, height 0.3s, background-color 0.3s;
     mix-blend-mode: difference;
 }
+
 #cursor-inner {
     position: fixed;
-    top: 0; left: 0; width: 6px; height: 6px;
+    top: 0; 
+    left: 0; 
+    width: 6px; 
+    height: 6px;
     background: #fff;
     border-radius: 50%;
     pointer-events: none;
@@ -48,6 +58,7 @@ body {
     -webkit-text-stroke: 1px rgba(255,255,255,0.1);
     color: transparent;
 }
+
 .clip-text-image {
     background-clip: text;
     -webkit-background-clip: text;
@@ -60,7 +71,10 @@ body {
 /* WebGL Canvas container */
 #canvas-container {
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
     z-index: -1;
     opacity: 0.4;
 }
@@ -68,23 +82,19 @@ body {
 /* Preloader */
 .preloader {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
     background: #000;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .counter { 
     font-family: 'Syncopate', sans-serif; 
     font-size: 4rem; 
     font-weight: 700; 
-}
-
-/* Hero Text Animation States */
-.hero-text-small,
-.hero-text-large,
-.hero-text-sub {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
 }
